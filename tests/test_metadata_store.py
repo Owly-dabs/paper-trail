@@ -1,4 +1,4 @@
-from metadata_store import init_db, add_metadata, get_metadata_by_ids
+from paper_trail.metadata_store import init_db, add_metadata, get_metadata_by_ids
 import os
 
 def test_metadata_operations():

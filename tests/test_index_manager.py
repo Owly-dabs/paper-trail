@@ -1,4 +1,4 @@
-from index_manager import create_or_load_index, add_embeddings, search
+from paper_trail.index_manager import create_or_load_index, add_embeddings, search
 import numpy as np
 import os
 

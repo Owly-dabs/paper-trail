@@ -1,4 +1,4 @@
-from embedding import embed_text
+from paper_trail.embedding import embed_text
 
 def test_embedding_shape():
     texts = ["This is a test sentence."]

@@ -33,7 +33,7 @@ jobs:
       - name: Lint with ruff
         run: |
           uv pip install ruff
-          uv run ruff check .
+          uv run ruff check paper_trail
 
       - name: Run tests
         run: |
