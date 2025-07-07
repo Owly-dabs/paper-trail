@@ -33,9 +33,9 @@ jobs:
       - name: Lint with ruff
         run: |
           uv pip install ruff
-          ruff check .
+          uv run ruff check .
 
       - name: Run tests
         run: |
           uv pip install pytest
-          pytest tests/
+          uv run pytest
