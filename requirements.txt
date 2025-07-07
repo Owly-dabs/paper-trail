@@ -2,3 +2,5 @@ PyQt5
 faiss-cpu
 sentence-transformers
 numpy
+pytest
+ruff
