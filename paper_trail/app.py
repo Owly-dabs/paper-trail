@@ -7,6 +7,14 @@ from metadata_store import init_db, add_metadata, get_metadata_by_ids
 
 import os
 
+from logging import getLogger
+from utils.logger import setup_logging  # rename your logging.py to logging_setup.py if conflicts
+
+setup_logging(log_file="faiss_search.log")
+
+logger = getLogger(__name__)
+logger.info("Application started.")
+
 class SemanticSearchApp(QWidget):
     def __init__(self):
         super().__init__()
