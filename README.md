@@ -62,7 +62,7 @@ PYTHONPATH=$(pwd) uv run pytest tests/
 
 ## 📦 Planned Features
 
-Feature roadmap is tracked under [GitHub Issues](https://github.com/your-username/paper-trail/issues).
+Feature roadmap is tracked under [GitHub Issues](https://github.com/Owly-dabs/paper-trail/issues).
 
 ---
 
