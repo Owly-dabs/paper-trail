@@ -84,7 +84,7 @@ We welcome contributions of all kinds:
 3. Ensure all tests pass: `PYTHONPATH=$(pwd) uv run pytest tests/`
 4. Open a pull request with a clear description of your changes
 
-Please refer to open [Issues](https://github.com/your-username/paper-trail/issues) for ideas on what to work on.
+Please refer to open [Issues](https://github.com/Owly-dabs/paper-trail/issues) for ideas on what to work on.
 
 ---
 
