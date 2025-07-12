@@ -2,7 +2,7 @@ import sqlite3
 
 DB_PATH = "data/metadata.db"
 
-def init_db():
+def init_db() -> None:
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute('''
@@ -15,7 +15,7 @@ def init_db():
     conn.commit()
     conn.close()
 
-def add_metadata(vector_id, file_path, snippet):
+def add_metadata(vector_id: int, file_path: str, snippet: str) -> None:
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute('INSERT INTO metadata (vector_id, file_path, snippet) VALUES (?, ?, ?)',
@@ -23,7 +23,7 @@ def add_metadata(vector_id, file_path, snippet):
     conn.commit()
     conn.close()
 
-def get_metadata_by_ids(ids):
+def get_metadata_by_ids(ids: list[int]) -> list[tuple[int, str, str]]:
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     placeholders = ','.join('?' for _ in ids)
