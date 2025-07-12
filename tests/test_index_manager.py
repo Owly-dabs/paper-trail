@@ -3,6 +3,10 @@ import numpy as np
 import os
 
 def test_faiss_index_operations():
+    if not os.path.exists("data"):
+        os.makedirs("data")
+    open("data/faiss.index", 'a').close()
+
     dimension = 384
     index = create_or_load_index(dimension)
 

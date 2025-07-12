@@ -5,3 +5,4 @@ venv/
 .DS_Store
 data
 *.log
+.ruff_cache
