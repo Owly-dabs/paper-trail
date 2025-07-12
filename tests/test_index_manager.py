@@ -1,6 +1,7 @@
 from paper_trail.index_manager import create_or_load_index, add_embeddings, search
 import numpy as np
 import os
+import numbers
 
 def test_faiss_index_operations():
     if not os.path.exists("data"):
@@ -18,7 +19,7 @@ def test_faiss_index_operations():
     indices = search(index, query_vector, k=3)
 
     assert len(indices) == 3
-    assert all(isinstance(i, int) for i in indices)
+    assert all(isinstance(i, numbers.Integral) for i in indices)
 
     # Cleanup
     if os.path.exists("data/faiss.index"):
